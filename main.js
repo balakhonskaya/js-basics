@@ -20,3 +20,14 @@ function compareDigits(a,b,n) {
     console.log('Первое число больше второго', aNormalized > bNormalized);
     console.log('Второе число больше первого',aNormalized < bNormalized);
 }
+
+//Task 3 Generate a random number in the specified interval 
+
+function randomOdd(min, max) {
+    return (min + Math.random() * (max - min)) | 1;
+  }
+
+  console.log(randomOdd(0, 100));
+  console.log(randomOdd(2, 5));
+  console.log(randomOdd(100, -5));
+  console.log(randomOdd(-3, -10));
