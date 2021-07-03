@@ -11,8 +11,8 @@ function calculateSquare(x1, y1, x2, y2) {
 //Task 2 Compare fractional part of a numberы a and b with precision n
 
 function compareDigits(a,b,n) {
-    let aNormalized = (a%1).toFixed(n);
-    let bNormalized = (b%1).toFixed(n);
+    let aNormalized = (a%1).toFixed(n)*(10**n);
+    let bNormalized = (b%1).toFixed(n)*(10**n);
     console.log('Дробная часть a', aNormalized);
     console.log('Дробная часть b', bNormalized);
     console.log('Дробные части равны', a===b);
