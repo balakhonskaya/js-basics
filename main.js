@@ -31,3 +31,19 @@ function randomOdd(min, max) {
   console.log(randomOdd(2, 5));
   console.log(randomOdd(100, -5));
   console.log(randomOdd(-3, -10));
+
+
+  //Task 4
+  //Password validation
+
+function validatePassword (pass) {
+    let count = 0;
+    count += /[a-z0-9_]$/.test(pass) ? 1 : 0;
+    count += /[a-z0-9-]$/.test(pass) ? 1 : 0;    
+    if ((count >= 1) && (pass.length>=4) ){
+        console.log('Пароль надежный')
+    }
+    else { 
+        console.log('Пароль недостаточно надежный')
+    }
+}
