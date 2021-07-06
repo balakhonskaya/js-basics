@@ -47,3 +47,14 @@ function validatePassword (pass) {
         console.log('Пароль недостаточно надежный')
     }
 }
+
+//Task 4
+  //Name validation
+
+  function nameValidation (name, surname) {
+     let nameFin = name.substr(0,1).toUpperCase() + name.substr(1).toLowerCase();
+     let surnameFin = surname.substr(0,1).toUpperCase() + surname.substr(1).toLowerCase();
+     (name !== nameFin) ? console.log("Имя было преобразовано") : console.log("Имя осталось без изменений");
+     (surname !== surnameFin) ? console.log("Фамилия была преобразована") : console.log("Фамилия осталась без изменений");
+     console.log('Name: ' + nameFin  +' Surname: '+ surnameFin);
+  }
